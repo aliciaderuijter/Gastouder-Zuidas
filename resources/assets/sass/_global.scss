@@ -1,0 +1,93 @@
+body {
+	overflow-x: hidden;
+}
+
+.logo {
+	height: 295px;
+}
+
+.section {
+
+	&:nth-child(odd) {
+		//	background-color: #a2da8d;
+		background-color: $body-bg;
+	}
+
+	&:nth-child(even) {
+		//	background-color: #7ba56b;
+		background-color: darken($body-bg, 5%);
+	}
+}
+
+.flex-container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.entire-page{
+
+	width: 100vw;
+	min-height: 100vh;
+}
+.navbar {
+
+	width: 100vw;
+}
+
+.nav-item {
+	font-size: 2.5em;
+	font-family: 'Great Vibes', Helvetica, sans-serif ;
+	padding: 0 0.75em;
+	cursor: pointer;
+}
+
+.nav-space{
+
+	padding-top: 6em;
+}
+
+.font-cursive {
+
+	font-family: 'Great Vibes', Helvetica, sans-serif;
+}
+
+.pink {
+	color: #EBAED0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #999;
+	font-family: Trebuchet MS;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bolder;
+
+}
+
+.sprite-holder {
+	width: 70px;
+	height: 65px;
+	margin: 50px;
+	position: relative;
+	background-image: url(http://c2.glitch.bz/items/2012-12-06/npc_butterfly__x1_fly-angle2_png_1354829527.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.full-page {
+
+	position: relative;
+	display: block;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
