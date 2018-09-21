@@ -1,4 +1,4 @@
-<section class="section" id="section1">
+<section class="section" id="section1" style="height: 800px">
     <div class="flex-container">
 
         <butterfly></butterfly>

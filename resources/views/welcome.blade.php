@@ -2,8 +2,6 @@
 
 @section('content')
 
-    @include('partials.navbar')
-
     @include('partials.butterfly')
 
     @include('partials.overMij')

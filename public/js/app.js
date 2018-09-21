@@ -56144,7 +56144,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "\n.absolute-bottom[data-v-226e4a27] {\n\n    position: absolute;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 1030;\n}\n\n", ""]);
+exports.push([module.i, "\n.navbar-light[data-v-226e4a27] {\n\n     background-color: #D1EAE7;\n     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);\n             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);\n}\n.nav-item[data-v-226e4a27] {\n\n     font-size: 1.5em;\n     text-align: center;\n}\n.nav-item.active>.nav-link[data-v-226e4a27] {\n\n     color: rgba(0, 0, 0, 0.5) !important;\n}\n@media (min-width: 768px) {\n.fixed-top[data-v-226e4a27] {\n         position: relative;\n}\n.navbar-light[data-v-226e4a27] {\n\n         background-color: transparent;\n         -webkit-box-shadow: none;\n                 box-shadow: none;\n}\n.nav-item[data-v-226e4a27] {\n         font-size: 2.5em;\n}\n.nav-item.active>.nav-link[data-v-226e4a27]{\n\n         color:#EBAED0 !important;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -56183,25 +56183,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	name: "",
 
+	props: {
+		active: {
+			type: String,
+			required: true
+		}
+	},
+
 	data: function data() {
 		return {
-			scrolled: false
+			scrolled: false,
+			scrollPosition: window.scrollY
 		};
 	},
 
 
 	methods: {
+		navigate: function navigate(section) {
+
+			var offset = 0;
+			if (screen.width < 768) {
+
+				offset = 75;
+			}
+
+			$('html, body').animate({ scrollTop: $(section).offset().top - offset }, 1000);
+			$('.navbar-toggler').click();
+		},
 		handleScroll: function handleScroll() {
+			this.scrollPosition = window.scrollY;
 
 			if (window.scrollY > 800) {
 
@@ -56210,6 +56224,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 				this.scrolled = false;
 			}
+		}
+	},
+
+	computed: {
+		showNavbar: function showNavbar() {
+			console.log(this.scrollPosition);
+			if (this.scrollPosition > 850) {
+				return false;
+			}
+			return true;
 		}
 	},
 
@@ -56231,11 +56255,87 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "nav",
-    {
-      staticClass: "navbar navbar-expand-lg navbar-light mb-5",
-      class: { "absolute-bottom": !_vm.scrolled, "fixed-top": _vm.scrolled }
-    },
-    [_vm._m(0), _vm._v(" "), _vm._m(1)]
+    { staticClass: "navbar fixed-top navbar-expand-lg navbar-light" },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "collapse navbar-collapse justify-content-center",
+          attrs: { id: "navbarNav" }
+        },
+        [
+          _c("ul", { staticClass: "navbar-nav " }, [
+            _c(
+              "li",
+              {
+                staticClass: "nav-item",
+                class: { active: _vm.active == "overMij" }
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "nav-link",
+                    on: {
+                      click: function($event) {
+                        _vm.navigate("#section2")
+                      }
+                    }
+                  },
+                  [_vm._v("Over mij")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass: "nav-item",
+                class: { active: _vm.active == "actueel" }
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "nav-link",
+                    on: {
+                      click: function($event) {
+                        _vm.navigate("#section3")
+                      }
+                    }
+                  },
+                  [_vm._v("Actueel")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass: "nav-item",
+                class: { active: _vm.active == "contact" }
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "nav-link",
+                    on: {
+                      click: function($event) {
+                        _vm.navigate("#section4")
+                      }
+                    }
+                  },
+                  [_vm._v("Contact")]
+                )
+              ]
+            )
+          ])
+        ]
+      )
+    ]
   )
 }
 var staticRenderFns = [
@@ -56250,84 +56350,10 @@ var staticRenderFns = [
         attrs: {
           type: "button",
           "data-toggle": "collapse",
-          "data-target": "#navbarNav",
-          "aria-controls": "navbarNav",
-          "aria-expanded": "false",
-          "aria-label": "Toggle navigation"
+          "data-target": "#navbarNav"
         }
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "collapse navbar-collapse justify-content-center",
-        attrs: { id: "navbarNav" }
-      },
-      [
-        _c("ul", { staticClass: "navbar-nav" }, [
-          _c("li", { staticClass: "nav-item active" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                attrs: {
-                  onclick:
-                    "$('html, body').animate({scrollTop: $('#section1').offset().top }, 1000);"
-                }
-              },
-              [_vm._v("Home")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                attrs: {
-                  onclick:
-                    "$('html, body').animate({scrollTop: $('#section2').offset().top }, 1000);"
-                }
-              },
-              [_vm._v("Over mij")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                attrs: {
-                  onclick:
-                    "$('html, body').animate({scrollTop: $('#section3').offset().top }, 1000);"
-                }
-              },
-              [_vm._v("Actueel")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                attrs: {
-                  onclick:
-                    "$('html, body').animate({scrollTop: $('#section4').offset().top }, 1000);"
-                }
-              },
-              [_vm._v("Contact")]
-            )
-          ])
-        ])
-      ]
     )
   }
 ]
