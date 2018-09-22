@@ -34,7 +34,7 @@
         <div class="col-12 col-lg-6">
 
 
-            <img src="/images/room.png" class="img-fluid rounded shadow" alt="media">
+            <img src="/images/room.png" class="img-fluid rounded shadow float-right" alt="media">
         </div>
     </div>
 
