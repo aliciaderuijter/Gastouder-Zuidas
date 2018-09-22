@@ -31,7 +31,7 @@
 
 
         </div>
-        <div class="col-12 col-lg-6 d-flex justify-content-end">
+        <div class="col-12 col-lg-6">
 
 
             <img src="/images/room.png" class="img-fluid rounded shadow" alt="media">

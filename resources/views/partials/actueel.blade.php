@@ -2,7 +2,7 @@
     <navbar active="actueel" class="d-none d-md-block"></navbar>
     <div class="row pb-5 mb-5">
 
-        <div class="col-12 col-lg-6 d-flex justify-content-start">
+        <div class="col-12 col-lg-6">
 
             <img src="/images/saskia.png" class="img-fluid rounded shadow" alt="media">
 
