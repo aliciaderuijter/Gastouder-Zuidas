@@ -24,7 +24,7 @@ class ContactController extends Controller {
 		}
 
 
-		Mail::to('aliciaderuijter@gmail.com')->send(new ContactUs($request->input('bericht'), $request->input('email'), $request->input('naam')));
+		Mail::to(env('CONTACT_EMAIL'))->send(new ContactUs($request->input('bericht'), $request->input('email'), $request->input('naam')));
 
 
 		$request->session()->flash('status', 'Uw email is verzonden!');
