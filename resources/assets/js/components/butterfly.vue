@@ -49,7 +49,7 @@
         left: 25%;
         width: 70px;
         height: 65px;
-        background-image: url(http://c2.glitch.bz/items/2012-12-06/npc_butterfly__x1_fly-angle2_png_1354829527.png);
+        background-image: url(/images/butterfly.png);
         background-position: 0 0;
         background-repeat: no-repeat;
     }
