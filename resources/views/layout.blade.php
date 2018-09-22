@@ -19,6 +19,7 @@
           content="Kleinschalig kinderopvang in Buitenveldert op een steenworp afstand van de Zuidas. De woning is een lichte ruimte met voldoende speelgoed, ingericht voor zowel peuters als kleuters. De locatie in Amsterdam Zuid is goed bereikbaar zowel met auto (de ring A10) als met het openbaar vervoer (5,24,51 en Noord-zuid lijn).">
 
     <meta name="keywords" content="gastouder, zuidas, zuid, buitenveldert, kleinschalig, baby, peuter, ehbo">
+    <meta name="google-site-verification" content="oCBIDdD1jabkaDu-xj3aHOnxJht2JcKPLDLU1Q0B6cI" />
     <!-- Styles -->
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
 
