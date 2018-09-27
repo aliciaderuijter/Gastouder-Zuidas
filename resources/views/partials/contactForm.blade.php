@@ -1,5 +1,5 @@
 <p>
-    Heeft u intresse of wilt u meer informatie, neemt u dan vrijblijvend contact met mij op.
+    Heeft u intresse of wilt u meer informatie, neem dan vrijblijvend contact met mij op.
 </p>
 @if (Session::has('status'))
 

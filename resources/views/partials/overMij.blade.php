@@ -10,7 +10,7 @@
 
 
             <p>
-                Ik ben een ervaren gastouder die al 14 jaar vanuit huis op kinder past, zelf ook moeder van
+                Ik ben een ervaren gastouder die al 14 jaar vanuit huis op kinderen past, zelf ook moeder van
                 inmiddels twee volwassen dochters. Mijn woning in buitenveldert is op loopafstand van de Zuidas en
                 is ingericht als kinderopvang. Een fijne lichte ruimte
                 met voldoende speelgoed, toegespits op verschillende leeftijden. Ik lees voor, dans, zing en teken
@@ -18,7 +18,7 @@
                 met de kinderen naar buiten in een vierling wagen naar het park of spelen in het speeltuintje voor
                 mijn huis. Ik ben in bezit van de benodigde documenten voor
                 gastouderopvang en landelijk geregistreerd. Ik beschik over; een VOG (Verklaring Omtrent Gedrag) en
-                een EHBO diploma. Daarnaast werk ik met twee gastouderbureau's; <a href="https://www.4kids.nl/"
+                een EHBO diploma. Daarnaast werk ik met twee gastouderbureau's; <a href="https://www.4kids.nl/opvangmarkt/gastouders/amsterdam/2068287"
                                                                                    target="_blank" class="a-pink">4kids</a> en <a
                         href="http://bekind.nl/" target="_blank" class="a-pink">B-kind</a>.
             </p>
